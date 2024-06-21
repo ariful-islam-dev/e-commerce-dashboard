@@ -1,4 +1,6 @@
+import { FaMoon } from "react-icons/fa";
 import useColorMode from "../../hooks/useColorMode";
+import { IoSunnySharp } from "react-icons/io5";
 
 const DarkModeSwitcher = () => {
     const [colorMode, setColorMode] = useColorMode()
@@ -17,10 +19,14 @@ const DarkModeSwitcher = () => {
                     className="absolute top-0 z-50 w-full h-full m-0 opacity-0 cursor-pointer dur"
                 />
                 <span
-                    className={`absolute top-1/2 left-[3px] flex h-6 w-6 -translate-y-1/2 translate-x-0 items-center justify-center rounded-full bg-white shadow-switcher duration-75 ease-linear ${colorMode === 'dark' && '!right-[3px]'} !translate-x-full`}
+                    className={`absolute top-1/2 left-[3px] flex h-6 w-6 -translate-y-1/2 translate-x-0 items-center justify-center rounded-full bg-white shadow-switcher duration-75 ease-linear ${colorMode === 'dark' && '!right-[3px] !translate-x-full'} `}
                 >
-                    <span className="dark:hidden"></span>
-                    <span className="hidden dark:inline-block"></span>
+                    <span className="dark:hidden">
+                        <IoSunnySharp />
+                    </span>
+                    <span className="hidden dark:inline-block">
+                        <FaMoon />
+                    </span>
                 </span>
             </label>
         </li>
