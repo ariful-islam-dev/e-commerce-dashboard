@@ -18,4 +18,12 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+
+    .chat-height{
+        @apply h-[calc(100vh_-_8.125rem)] lg:h-[calc(100vh_-_5.625rem)];
+    }
+
+    .index-height{
+        @apply h-[calc(100vh_-_8.125)] lg:h-[calc(100vh_-_5.625rem)]
+    }
 }
