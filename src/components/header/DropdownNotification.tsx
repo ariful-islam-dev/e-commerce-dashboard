@@ -22,6 +22,16 @@ const DropdownNotification = () => {
         return () => document.removeEventListener('click', clickHandler)
     })
 
+    // close if the esc key is pressed
+    useEffect(() => {
+        const keyHandler = ({ keyCode }: KeyboardEvent) => {
+            if (!dropdownOpen || keyCode !== 27) return;
+            setDropdownOpen(false)
+        }
+        document.addEventListener('keydown', keyHandler);
+        return () => document.removeEventListener('keydown', keyHandler)
+    })
+
     return (
         <li className="relative">
             <Link to={"#"}
@@ -53,7 +63,7 @@ const DropdownNotification = () => {
                         Notification
                     </h5>
                 </div>
-                <ul className="flex h-auto flex-col overflow-y-auto">
+                <ul className="flex flex-col h-auto overflow-y-auto">
                     <li>
                         <Link to={"#"}
                             className="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"

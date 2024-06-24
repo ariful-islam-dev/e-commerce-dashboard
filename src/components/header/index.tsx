@@ -2,6 +2,9 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownNotification from "./DropdownNotification";
+import DropdownMessage from "./DropdownMessage";
+import { CiSearch } from "react-icons/ci";
+import DropdownUser from "./DropdownUser";
 
 interface HeaderProps {
     sidebarOpen: string | boolean | undefined;
@@ -35,7 +38,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
                         <div className="relative">
                             <button
                                 className="absolute left-0 -translate-y-1/2 top-1/2"
-                            >Search</button>
+                            ><CiSearch className="w-5 h-5" /></button>
                             <input type="text" placeholder="Type to search..."
                                 className="w-full pr-4 text-black bg-transparent pl-9 focus:outline-none dark:text-white xl:w-125"
                             />
@@ -45,14 +48,16 @@ const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
 
                 <div className="flex items-center gap-3 2xsm:gap-7">
                     <ul className="flex gap-2 item-center 2xsm:gap-4">
-                        {/* TODO: Dark Mode  */}
+                        {/*  Dark Mode  */}
                         <DarkModeSwitcher />
-                        {/* TODO: Notification Menu */}
+                        {/* Notification Menu */}
                         <DropdownNotification />
-                        {/* TODO:Chat Notification */}
+                        {/* Chat Notification */}
+                        <DropdownMessage />
 
                     </ul>
                     {/* TODO:User */}
+                    <DropdownUser />
                 </div>
             </div>
         </header>
