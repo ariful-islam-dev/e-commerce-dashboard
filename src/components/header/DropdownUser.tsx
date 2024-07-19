@@ -3,8 +3,9 @@ import { FaRegAddressBook, FaUser } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { LuLogOut } from "react-icons/lu";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
+import { TbLogout2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
-
+import arif from '../../images/arif.png'
 
 const DropdownUser = () => {
 
@@ -35,8 +36,8 @@ const DropdownUser = () => {
                     <span className="block text-sm font-medium text-black dark:text-white">Thomas Jhonson</span>
                     <span className="block text-xs">Developer</span>
                 </span>
-                <span className="w-12 h-12 rounded-full border-boxdark border-[0.5px] flex items-center justify-center">
-                    <FaUser className="w-10 h-10" />
+                <span className="w-12 h-12 overflow-hidden rounded-full border-boxdark border-[0.5px] flex items-center justify-center">
+                    <img src={arif} alt="User" />
                 </span>
 
                 <IoIosArrowDown />
@@ -79,7 +80,7 @@ const DropdownUser = () => {
                     </li>
                 </ul>
                 <button className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300  ease-in-out hover:text-primary lg:text-base">
-                    <LuLogOut />
+                    <TbLogout2 />
                     Logout
                 </button>
             </div>
