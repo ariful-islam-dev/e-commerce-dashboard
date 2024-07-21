@@ -6,6 +6,8 @@ import ECommerce from './pages/Dashboard';
 import './css/style.css'
 import Calender from './pages/Calender';
 import Profile from './pages/Profile';
+import Tables from './pages/Tables';
+import Settings from './pages/Settings';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -48,6 +50,24 @@ function App() {
           <>
             <PageTitle title='Profile || Md. Ariful Islam' />
             <Profile />
+          </>
+        }
+      />
+      <Route
+        path="/tables"
+        element={
+          <>
+            <PageTitle title='Tables || Md. Ariful Islam' />
+            <Tables />
+          </>
+        }
+      />
+      <Route
+        path="/settings"
+        element={
+          <>
+            <PageTitle title='Setting || Md. Ariful Islam' />
+            <Settings />
           </>
         }
       />
