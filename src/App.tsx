@@ -4,6 +4,8 @@ import Loader from './common/Loader';
 import PageTitle from './components/PageTitle';
 import ECommerce from './pages/Dashboard';
 import './css/style.css'
+import Calender from './pages/Calender';
+import Profile from './pages/Profile';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -28,6 +30,24 @@ function App() {
           <>
             <PageTitle title='eCommerce Dashboard || Md. Ariful Islam' />
             <ECommerce />
+          </>
+        }
+      />
+      <Route
+        path="/calendar"
+        element={
+          <>
+            <PageTitle title='Calender || Md. Ariful Islam' />
+            <Calender />
+          </>
+        }
+      />
+      <Route
+        path="/profile"
+        element={
+          <>
+            <PageTitle title='Profile || Md. Ariful Islam' />
+            <Profile />
           </>
         }
       />
