@@ -9,6 +9,10 @@ import Profile from './pages/Profile';
 import Tables from './pages/Tables';
 import Settings from './pages/Settings';
 import Chart from './pages/Chart';
+import Alerts from './pages/UiElements/Alerts';
+import Buttons from './pages/UiElements/Buttons';
+import SignIn from './pages/Authentication/SignIn';
+import SignUp from './pages/Authentication/SignUp';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -71,12 +75,47 @@ function App() {
             <Settings />
           </>
         }
-      /><Route
+      />
+      <Route
         path="/chart"
         element={
           <>
             <PageTitle title='Basic Chart || Md. Ariful Islam' />
             <Chart />
+          </>
+        }
+      />
+      <Route
+        path="/ui/alerts"
+        element={
+          <>
+            <PageTitle title='Alerts || Md. Ariful Islam' />
+            <Alerts />
+          </>
+        }
+      />
+      <Route
+        path="/ui/buttons"
+        element={
+          <>
+            <PageTitle title='Buttons || Md. Ariful Islam' />
+            <Buttons />
+          </>
+        }
+      /> <Route
+        path="/auth/signin"
+        element={
+          <>
+            <PageTitle title='SignIn || Md. Ariful Islam' />
+            <SignIn />
+          </>
+        }
+      /> <Route
+        path="/auth/signup"
+        element={
+          <>
+            <PageTitle title='SignUp || Md. Ariful Islam' />
+            <SignUp />
           </>
         }
       />
