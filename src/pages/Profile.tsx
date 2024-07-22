@@ -3,6 +3,7 @@ import Breadcrumb from '../components/Breadcrumbs/index';
 import userPhoto from '../images/arif.png'
 import cover from '../images/cover.png'
 import { Link } from 'react-router-dom';
+import { FaCamera, FaDribbble, FaEdit, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const aboutData = [
     {
@@ -31,7 +32,9 @@ const Profile = () => {
                     <div className="absolute z-10 bottom-1 right-1 xsm:bottom-4 xsm:right-4">
                         <label htmlFor="cover" className="flex items-center justify-center gap-2 px-2 py-1 text-sm font-medium text-white rounded cursor-pointer bg-primary hover:bg-opacity-90 xsm:px-4">
                             <input type="file" className="sr-only" id="cover" />
-                            <span></span>
+                            <span>
+                                <FaEdit />
+                            </span>
                             <span>Edit</span>
 
                         </label>
@@ -45,6 +48,7 @@ const Profile = () => {
                             </span>
                             <label htmlFor="profile" className="absolute bottom-0 right-0 flex h-8.5 w-8.5 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:bottom-2 sm:right-2">
                                 {/* icon  */}
+                                <FaCamera />
                                 <input type="file" name="profile" id="profile" className="sr-only" />
                             </label>
                         </div>
@@ -80,24 +84,19 @@ const Profile = () => {
                         </h4>
                         <div className="flex items-center justify-center gap-3 5">
                             <Link to={'#'} className="hover:text-primary" aria-label="social-icon">
-                                {/* Facebook icon  */}
-                                Fb
+                                <FaFacebook />
                             </Link>
                             <Link to={'#'} className="hover:text-primary" aria-label="social-icon">
-                                {/* Facebook icon  */}
-                                Tw
+                                <FaTwitter />
                             </Link>
                             <Link to={'#'} className="hover:text-primary" aria-label="social-icon">
-                                {/* Facebook icon  */}
-                                Ln
+                                <FaLinkedin />
                             </Link>
                             <Link to={'#'} className="hover:text-primary" aria-label="social-icon">
-                                {/* Facebook icon  */}
-                                Dr
+                                <FaDribbble />
                             </Link>
                             <Link to={'#'} className="hover:text-primary" aria-label="social-icon">
-                                {/* Facebook icon  */}
-                                Gh
+                                <FaGithub />
                             </Link>
 
                         </div>

@@ -8,6 +8,7 @@ import Calender from './pages/Calender';
 import Profile from './pages/Profile';
 import Tables from './pages/Tables';
 import Settings from './pages/Settings';
+import Chart from './pages/Chart';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -68,6 +69,14 @@ function App() {
           <>
             <PageTitle title='Setting || Md. Ariful Islam' />
             <Settings />
+          </>
+        }
+      /><Route
+        path="/chart"
+        element={
+          <>
+            <PageTitle title='Basic Chart || Md. Ariful Islam' />
+            <Chart />
           </>
         }
       />
