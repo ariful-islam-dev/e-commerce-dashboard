@@ -1,4 +1,4 @@
-import { BRAND } from "../../types/brand"
+import { BRAND } from "../../../types/brand"
 
 const tableHeading = ['Source', 'Visitors', 'Revenues', 'Sales', 'Conversion']
 const brandData: BRAND[] = [

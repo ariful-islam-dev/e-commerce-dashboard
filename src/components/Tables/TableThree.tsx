@@ -1,5 +1,5 @@
 import { FaDeleteLeft } from "react-icons/fa6";
-import { Package } from "../../types/package";
+import { Package } from "../../../types/package";
 import { FaDownload, FaEye } from "react-icons/fa";
 
 const packageData: Package[] = [

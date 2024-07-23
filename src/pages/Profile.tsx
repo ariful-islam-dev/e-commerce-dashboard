@@ -24,12 +24,12 @@ const Profile = () => {
     return (
         <DefaultLayout>
             <Breadcrumb pageName="Profile" />
-            <div className="overflow-hidden bg-white border rounded-sm border-stroke shadow-default dark:border-strokedar dark:bg-boxdark">
+            <div className="overflow-hidden bg-white border rounded-md border-stroke shadow-default dark:border-strokedar dark:bg-boxdark">
                 <div className="relative z-20 h-35 md:h-65">
                     <img src={cover} alt="Profile Cover"
-                        className="object-cover object-center w-full rounded-tl-sm rounded-tr-sm h-70"
+                        className="object-cover object-center w-full rounded-tl-sm rounded-tr-sm h-[100%]"
                     />
-                    <div className="absolute z-10 bottom-1 right-1 xsm:bottom-4 xsm:right-4">
+                    <div className="absolute z-10 bottom-1 right-1 xsm:bottom-4 xsm:right-4 ">
                         <label htmlFor="cover" className="flex items-center justify-center gap-2 px-2 py-1 text-sm font-medium text-white rounded cursor-pointer bg-primary hover:bg-opacity-90 xsm:px-4">
                             <input type="file" className="sr-only" id="cover" />
                             <span>
@@ -39,10 +39,11 @@ const Profile = () => {
 
                         </label>
                     </div>
+                    <div className="absolute w-[100%] h-[100%] top-0 left-0 bg-black opacity-50 -z-5 "></div>
                 </div>
                 <div className="px-4 pb-6 text-center lg:pb-8 xl:pb-11 5">
-                    <div className="relative z-30 w-full p-1 mx-auto rounded-full -mt-22 h-30 max-w-30 bg-white/20 backdrop-blur sm:h-44 sm:max-w-44 sm:p-3">
-                        <div className="relative drop-shadow-5">
+                    <div className="relative z-30 w-full p-1 mx-auto  rounded-full -mt-22 h-30 max-w-30 bg-white/20 backdrop-blur border-solid  sm:h-44 sm:max-w-44 sm:p-3">
+                        <div className="relative drop-shadow-5 ">
                             <span className=" rounded-full items-center justify-center flex w-[100%] h-[150px]  overflow-hidden" >
                                 <img src={userPhoto} alt="profile" />
                             </span>

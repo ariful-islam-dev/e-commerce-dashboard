@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaBars, FaRegUser, FaWpforms } from "react-icons/fa";
+import { FaAngleDoubleLeft, FaBars, FaRegUser, FaWpforms } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import { LuLayoutDashboard, LuLogOut } from "react-icons/lu";
@@ -62,7 +62,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             {/* Sidebar Header Start */}
             <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
                 <NavLink to={"/"}>
-                    <h2 className="text-3xl text-white">Quick Dev...</h2>
+                    <h2 className="text-3xl text-white">Quick Dev</h2>
                 </NavLink>
                 <button
                     ref={trigger}
@@ -71,7 +71,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     aria-expanded={sidebarOpen}
                     className="block lg:hidden"
                 >
-                    <FaBars className="w-20 h-18 border-gray" />
+                    <FaAngleDoubleLeft className="w-6 h-6 border-gray" />
                 </button>
             </div>
             {/* Sidebar Header End */}

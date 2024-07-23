@@ -205,7 +205,7 @@ const SignUp = () => {
                                     </div>
                                 </div>
                                 <div className="mb-5">
-                                    <input type="submit" value="Sign In" className='w-full p-4 text-white transition border rounded-lg cursor-pointer border-primary bg-primary hover:bg-opacity-90' />
+                                    <input type="submit" value="Sign Up" className='w-full p-4 text-white transition border rounded-lg cursor-pointer border-primary bg-primary hover:bg-opacity-90' />
                                 </div>
                                 <button className='flex w-full items-center justify-center gap-3.5 rounded-lg border border-stroke bg-gray p-4 hover:bg-opacity-50 dark:border-strokedark dark:bg-meta-4 dark:bg-opacity-50'>
                                     <span className='text-2xl text-meta-7'>
