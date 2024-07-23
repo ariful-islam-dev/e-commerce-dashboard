@@ -13,6 +13,8 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
+import FormElements from './pages/Form/FormElements';
+import FormLayout from './pages/Form/FormLayout';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -110,12 +112,30 @@ function App() {
             <SignIn />
           </>
         }
-      /> <Route
+      />
+      <Route
         path="/auth/signup"
         element={
           <>
             <PageTitle title='SignUp || Md. Ariful Islam' />
             <SignUp />
+          </>
+        }
+      />
+      <Route
+        path="/forms/form-elements"
+        element={
+          <>
+            <PageTitle title='Form Elements || Md. Ariful Islam' />
+            <FormElements />
+          </>
+        }
+      /><Route
+        path="/forms/form-layout"
+        element={
+          <>
+            <PageTitle title='Form Layout || Md. Ariful Islam' />
+            <FormLayout />
           </>
         }
       />
