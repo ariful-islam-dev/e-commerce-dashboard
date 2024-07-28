@@ -3,7 +3,7 @@ import DefaultLayout from '../../layout';
 import Breadcrumb from '../../components/Breadcrumbs';
 import { FaCheck, FaExclamationTriangle, FaSkullCrossbones } from 'react-icons/fa';
 
-const Alerts = () => {
+const Alerts: React.FC = () => {
     return (
         <DefaultLayout>
             <Breadcrumb pageName='Alerts' />

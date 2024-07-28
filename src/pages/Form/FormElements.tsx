@@ -1,4 +1,4 @@
-import React from 'react';
+
 import DefaultLayout from '../../layout';
 import Breadcrumb from '../../components/Breadcrumbs';
 import SwitcherOne from '../../components/Switchers/SwitcherOne';
@@ -93,7 +93,7 @@ const FormElements = () => {
                             <div>
                                 <label className="block mb-3 text-black dark:text-white">Attach File</label>
                                 <input type="file"
-                                    className='w-full cursor-pointer rounded-lg border border-stroke bg-transparent outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:py-3 file:px-5 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:file:border-form-strokedark dark:file:bg-whiter/30 dark:file:text-white dark:focus:border-primary'
+                                    className='w-full transition bg-transparent border rounded-lg outline-none cursor-pointer border-stroke file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:py-3 file:px-5 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:file:border-form-strokedark dark:file:bg-whiter/30 dark:file:text-white dark:focus:border-primary'
                                 />
                             </div>
                             <div>
@@ -116,16 +116,16 @@ const FormElements = () => {
                         </div>
                         <div className="flex flex-col gap-5.5 p-6.5">
                             <div>
-                                <label className="mb-3 block text-black dark:text-white">Default textarea</label>
+                                <label className="block mb-3 text-black dark:text-white">Default textarea</label>
                                 <textarea rows={6} placeholder='Default textarea' className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
                             </div>
 
                             <div>
-                                <label className="mb-3 block text-black dark:text-white">Active textarea</label>
+                                <label className="block mb-3 text-black dark:text-white">Active textarea</label>
                                 <textarea rows={6} placeholder='Active textarea' className="w-full rounded-lg border-[1.5px] border-primary bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter  dark:bg-form-input dark:text-white"></textarea>
                             </div>
                             <div>
-                                <label className="mb-3 block text-black dark:text-white">Disabled textarea</label>
+                                <label className="block mb-3 text-black dark:text-white">Disabled textarea</label>
                                 <textarea disabled rows={6} placeholder='Disabled textarea' className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter  dark:bg-form-input dark:text-white"></textarea>
                             </div>
                         </div>

@@ -42,7 +42,7 @@ const formfields = {
     },
 }
 
-const Settings = () => {
+const Settings: React.FC = () => {
     const fields = Object.values(formfields)
 
 

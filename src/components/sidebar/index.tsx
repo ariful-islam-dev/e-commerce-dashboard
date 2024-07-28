@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaAngleDoubleLeft, FaBars, FaRegUser, FaWpforms } from "react-icons/fa";
+import { FaAngleDoubleLeft, FaRegUser, FaWpforms } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import { LuLayoutDashboard, LuLogOut } from "react-icons/lu";
