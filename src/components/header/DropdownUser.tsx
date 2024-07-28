@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { FaRegAddressBook, FaUser } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-import { LuLogOut } from "react-icons/lu";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { TbLogout2 } from "react-icons/tb";
 import { Link } from "react-router-dom";

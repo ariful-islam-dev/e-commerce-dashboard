@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { FaAngleDown, FaArrowDown, FaDribbble } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
 
-const SelectGroupOne = () => {
+const SelectGroupOne: React.FC = () => {
     const [selectedOption, setSelectedOption] = useState<string>('')
     const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false)
 
@@ -11,7 +11,7 @@ const SelectGroupOne = () => {
 
     return (
         <div className='mb-5'>
-            <label htmlFor="" className='mb-3 block text-black dark:text-white'>Select Country</label>
+            <label htmlFor="" className='block mb-3 text-black dark:text-white'>Select Country</label>
             <div className="relative z-20 bg-white dark:bg-form-input">
                 <select value={selectedOption}
                     onChange={(e) => {
@@ -26,7 +26,7 @@ const SelectGroupOne = () => {
                     <option value="Canada" className="text-body dark:text-bodydark">Canada</option>
 
                 </select>
-                <span className="absolute top-1/2 right-4 z-10 -translate-y-1/2">
+                <span className="absolute z-10 -translate-y-1/2 top-1/2 right-4">
                     <FaAngleDown className='w-6 h-6' />
                 </span>
             </div>

@@ -1,6 +1,6 @@
-import flatpickr from 'flatpickr';
-import React, { useEffect } from 'react';
-import { FaArrowDown, FaCalendar } from 'react-icons/fa';
+// import flatpickr from 'flatpickr';
+import React from 'react';
+import { FaArrowDown } from 'react-icons/fa';
 
 const DatePickerTwo: React.FC = () => {
     // useEffect(() => {

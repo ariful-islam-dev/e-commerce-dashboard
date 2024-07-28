@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import DefaultLayout from '../../layout';
 import Breadcrumb from '../../components/Breadcrumbs';
-import SelectGroupTwo from '../../components/Forms/SelectGroup/SelectGroupTwo';
 import SelectGroupOne from '../../components/Forms/SelectGroup/SelectGroupOne';
 import { Link } from 'react-router-dom';
 import { FaCheck } from 'react-icons/fa';
 
-const FormLayout = () => {
+const FormLayout: React.FC = () => {
     const [isChecked, setIsChecked] = useState<boolean>(false)
     const handleCheck = () => {
         setIsChecked(!isChecked)
@@ -26,7 +25,7 @@ const FormLayout = () => {
                         </div>
                         <form action="#">
                             <div className="p-6.5">
-                                <div className="mb-4 5 flex flex-col gap-6 xl:flex-row">
+                                <div className="flex flex-col gap-6 mb-4 5 xl:flex-row">
                                     <div className="w-full xl:w-1/2">
                                         <label htmlFor="" className="mb-2.5 block text-black dark:text-white">
                                             First Name
@@ -127,7 +126,7 @@ const FormLayout = () => {
                                 </div>
                             </div>
                             <div className="mt-5 mb-5.5 flex items-center justify-between">
-                                <label htmlFor="checkboxLabelTwo" className='flex cursor-pointer select-none items-center'>
+                                <label htmlFor="checkboxLabelTwo" className='flex items-center cursor-pointer select-none'>
                                     <div className="relative">
                                         <input type="checkbox" id="checkboxLabelTwo" className='sr-only' onChange={handleCheck} />
                                         <div className={`mr-4 flex h-5 w-5 items-center justify-center rounded border ${isChecked && 'border-primary bg-primary dark:bg-transparent'}`}>

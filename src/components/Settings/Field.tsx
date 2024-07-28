@@ -8,15 +8,15 @@ interface propsType {
     icon: ReactNode;
 }
 
-const Field = ({ title, type, id, placeHolder, icon }: propsType) => {
+const Field: React.FC<propsType> = (data: propsType) => {
     return (
         <>
             <label htmlFor="fullName">
-                {title}
+                {data.title}
             </label>
             <div className="relative">
                 <span className="absolute left-4.5 top-4">
-                    {icon}
+                    {data.icon}
                 </span>
                 <input type="text"
                     className='w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus-border-primary'

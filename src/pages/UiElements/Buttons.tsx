@@ -4,7 +4,7 @@ import Breadcrumb from '../../components/Breadcrumbs';
 import { Link } from 'react-router-dom';
 import { FaEnvelope, FaShoppingCart, FaUserCheck } from 'react-icons/fa';
 
-const Buttons = () => {
+const Buttons: React.FC = () => {
     return (
         <DefaultLayout>
             <Breadcrumb pageName='Buttons' />

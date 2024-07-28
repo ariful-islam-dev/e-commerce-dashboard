@@ -1,4 +1,4 @@
-import React from 'react';
+
 import DefaultLayout from '../../layout';
 import Breadcrumb from '../../components/Breadcrumbs';
 import { FaEnvelope, FaEye, FaGoogle, FaLock, FaUser } from 'react-icons/fa';
