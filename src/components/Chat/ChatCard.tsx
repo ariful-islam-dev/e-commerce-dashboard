@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom"
+import devid from '../../assets/images/img-m1.png'
+import henry from '../../assets/images/img-f1.png'
+
 
 const chatData = [
     {
-        avatar: '',
+        avatar: devid,
         name: 'Devid Heilo',
         text: 'How are you?',
         time: 12,
@@ -10,7 +13,7 @@ const chatData = [
         color: '#10B981',
     },
     {
-        avatar: '',
+        avatar: henry,
         name: 'Henry Fisher',
         text: 'Waiting for you!',
         time: 12,
@@ -18,7 +21,7 @@ const chatData = [
         color: '#dc3545',
     },
     {
-        avatar: '',
+        avatar: devid,
         name: 'Jhon Doe',
         text: "What's up?",
         time: 32,
@@ -26,23 +29,23 @@ const chatData = [
         color: '#10b981',
     },
     {
-        avatar: '',
-        name: 'Jhon Doe',
+        avatar: devid,
+        name: 'Alex Mertin',
         text: "Great",
         time: 32,
         textCount: 2,
         color: '#ffba00',
     },
     {
-        avatar: '',
-        name: 'Jhon Doe',
+        avatar: henry,
+        name: 'Jorze Henry',
         text: "How are you?",
         time: 32,
         textCount: 0,
         color: '#10b981',
     },
     {
-        avatar: '',
+        avatar: devid,
         name: 'Jhon Doe',
         text: "How are you?",
         time: 32,
