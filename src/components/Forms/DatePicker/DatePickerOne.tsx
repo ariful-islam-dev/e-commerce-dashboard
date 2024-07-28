@@ -1,5 +1,5 @@
-import flatpickr from 'flatpickr';
-import React, { useEffect } from 'react';
+// import flatpickr from 'flatpickr';
+// import React, { useEffect } from 'react';
 import { FaCalendar } from 'react-icons/fa';
 
 const DatePickerOne: React.FC = () => {
