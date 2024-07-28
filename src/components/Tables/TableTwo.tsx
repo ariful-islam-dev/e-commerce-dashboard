@@ -1,4 +1,7 @@
-
+import iphone from '../../assets/images/i-phone.jpeg'
+import macbook from '../../assets/images/mac-book.jpeg'
+import dell from '../../assets/images/dell-Inspiron.jpeg'
+import hp from '../../assets/images/hp-book.jpeg'
 const productHead = [
     'Product Name',
     'Category',
@@ -9,7 +12,7 @@ const productHead = [
 
 const products = [
     {
-        image: '',
+        image: iphone,
         name: "Apple Watch Series 7",
         category: 'Electronics',
         price: 296,
@@ -17,7 +20,7 @@ const products = [
         profit: 45
     },
     {
-        image: '',
+        image: macbook,
         name: "Macbook Pro M2",
         category: 'Electronics',
         price: 765,
@@ -25,7 +28,7 @@ const products = [
         profit: 160
     },
     {
-        image: '',
+        image: dell,
         name: "Dell Inspiron 15 5593",
         category: 'Electronics',
         price: 445,
@@ -33,7 +36,7 @@ const products = [
         profit: 134
     },
     {
-        image: '',
+        image: hp,
         name: "HP Probook 450",
         category: 'Electronics',
         price: 499,

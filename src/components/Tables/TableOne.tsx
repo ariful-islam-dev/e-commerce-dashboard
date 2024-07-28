@@ -1,9 +1,15 @@
+
 import { BRAND } from "../../../types/brand"
+import facebook from '../../assets/images/facebook.png'
+import google from '../../assets/images/google.png'
+import x from '../../assets/images/x.png'
+import github from '../../assets/images/github.png'
+import vimeo from '../../assets/images/vimeo.png'
 
 const tableHeading = ['Source', 'Visitors', 'Revenues', 'Sales', 'Conversion']
 const brandData: BRAND[] = [
     {
-        logo: '',
+        logo: google,
         name: 'Google',
         visitors: 3.5,
         revenues: '5,768',
@@ -11,7 +17,7 @@ const brandData: BRAND[] = [
         conversion: 4.8
     },
     {
-        logo: '',
+        logo: x,
         name: 'Twitter',
         visitors: 2.2,
         revenues: '4,635',
@@ -19,7 +25,7 @@ const brandData: BRAND[] = [
         conversion: 4.3
     },
     {
-        logo: '',
+        logo: github,
         name: 'Github',
         visitors: 2.1,
         revenues: '4,290',
@@ -27,7 +33,7 @@ const brandData: BRAND[] = [
         conversion: 3.7
     },
     {
-        logo: '',
+        logo: vimeo,
         name: 'Vimeo',
         visitors: 1.5,
         revenues: '3,580',
@@ -35,7 +41,7 @@ const brandData: BRAND[] = [
         conversion: 2.5
     },
     {
-        logo: '',
+        logo: facebook,
         name: 'Facebook',
         visitors: 3.5,
         revenues: '6,768',
@@ -70,6 +76,7 @@ const TableOne = () => {
                             <div className="flex items-center gap-3 p-2.5 xl:p-5">
                                 <div className="flex-shrink-0 border-2 rounded-full w-14 h-14 border-gray">
                                     <img src={brand.logo} alt="Brand" />
+                                    {/* <span>{brand.logo}</span> */}
                                 </div>
                                 <p className="hidden text-black dark:text-white sm:block">
                                     {brand.name}
