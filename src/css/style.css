@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body {
+        @apply font-normal text-base text-body bg-whiten relative z-1
+    }
+}
+@layer components{}
+
+@layer utilities{
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .chat-height{
+        @apply h-[calc(100vh_-_8.125rem)] lg:h-[calc(100vh_-_5.625rem)];
+    }
+
+    .index-height{
+        @apply h-[calc(100vh_-_8.125)] lg:h-[calc(100vh_-_5.625rem)]
+    }
+}
